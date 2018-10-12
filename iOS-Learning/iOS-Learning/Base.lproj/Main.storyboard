@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="Ke1-QC-kJv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9KV-M0-eEe">
+                                <rect key="frame" x="147.5" y="45" width="119" height="20"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-kt-93u">
+                                <rect key="frame" x="87.5" y="145" width="239" height="63.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="53"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVX-Ij-nry">
+                                <rect key="frame" x="77" y="210.5" width="260" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="rL2-tM-5uR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8w-1H-nWj">
+                                <rect key="frame" x="77" y="254" width="260" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc2-nv-ecJ" customClass="BorderButton" customModule="iOS_Learning" customModuleProvider="target">
+                                <rect key="frame" x="16" y="782" width="382" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.411834286971831" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7cn-7Q-Jlc"/>
+                                </constraints>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9KV-M0-eEe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Vl-Wa-PdL"/>
+                            <constraint firstItem="fVX-Ij-nry" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5w3-8k-99N"/>
+                            <constraint firstItem="W8w-1H-nWj" firstAttribute="width" secondItem="fVX-Ij-nry" secondAttribute="width" id="6bK-QD-eOL"/>
+                            <constraint firstItem="W8w-1H-nWj" firstAttribute="top" secondItem="fVX-Ij-nry" secondAttribute="bottom" constant="12" id="CT2-HQ-vUu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uc2-nv-ecJ" secondAttribute="bottom" constant="20" id="CrE-Si-Cts"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ke1-QC-kJv" secondAttribute="bottom" id="EhP-3x-4J2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ke1-QC-kJv" secondAttribute="trailing" id="Gb8-TT-Mpb"/>
+                            <constraint firstItem="W8w-1H-nWj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T8J-1u-Ypv"/>
+                            <constraint firstItem="uc2-nv-ecJ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZGh-VL-Ot9"/>
+                            <constraint firstItem="Cg2-kt-93u" firstAttribute="top" secondItem="9KV-M0-eEe" secondAttribute="bottom" constant="80" id="Zwj-DV-aqH"/>
+                            <constraint firstItem="Ke1-QC-kJv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="abu-HD-DoP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uc2-nv-ecJ" secondAttribute="trailing" constant="16" id="aeC-Hd-kdz"/>
+                            <constraint firstItem="Ke1-QC-kJv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cwS-di-92A"/>
+                            <constraint firstItem="Cg2-kt-93u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d26-12-9HN"/>
+                            <constraint firstItem="fVX-Ij-nry" firstAttribute="firstBaseline" secondItem="Cg2-kt-93u" secondAttribute="baseline" constant="40" symbolType="layoutAnchor" id="h95-z1-BtW"/>
+                            <constraint firstItem="uc2-nv-ecJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hmq-8H-uLo"/>
+                            <constraint firstItem="9KV-M0-eEe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="45" id="kN4-72-mhb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgImg" destination="Ke1-QC-kJv" id="YK4-9C-kF1"/>
+                        <outlet property="swooshLogo" destination="9KV-M0-eEe" id="85B-nQ-EZ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.71875" y="133.0078125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="swooshLogo" width="119" height="20"/>
+        <image name="welcomeScreenBG" width="414" height="736"/>
+    </resources>
+</document>
