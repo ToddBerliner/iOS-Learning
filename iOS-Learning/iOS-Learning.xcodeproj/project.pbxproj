@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A55C202217113E200A29A58 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55C201217113E200A29A58 /* WelcomeViewController.swift */; };
+		6A55C2042171142F00A29A58 /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55C2032171142F00A29A58 /* LeagueViewController.swift */; };
+		6A55C2062171144100A29A58 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55C2052171144100A29A58 /* SkillViewController.swift */; };
 		6A596A7C216980F100F2B072 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A596A7B216980F100F2B072 /* AppDelegate.swift */; };
-		6A596A7E216980F100F2B072 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A596A7D216980F100F2B072 /* ViewController.swift */; };
 		6A596A81216980F100F2B072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A596A7F216980F100F2B072 /* Main.storyboard */; };
 		6A596A84216980F100F2B072 /* iOS_Learning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A596A82216980F100F2B072 /* iOS_Learning.xcdatamodeld */; };
 		6A596A86216980F200F2B072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A596A85216980F200F2B072 /* Assets.xcassets */; };
@@ -17,9 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A55C201217113E200A29A58 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		6A55C2032171142F00A29A58 /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
+		6A55C2052171144100A29A58 /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		6A596A78216980F100F2B072 /* iOS-Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A596A7B216980F100F2B072 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A596A7D216980F100F2B072 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A596A80216980F100F2B072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A596A83216980F100F2B072 /* iOS_Learning.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Learning.xcdatamodel; sourceTree = "<group>"; };
 		6A596A85216980F200F2B072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,9 +62,10 @@
 		6A596A7A216980F100F2B072 /* iOS-Learning */ = {
 			isa = PBXGroup;
 			children = (
-				6A596A902169868600F2B072 /* Views */,
+				6AFB05F0217112FF0038BAE6 /* Controller */,
+				6AFB05EF217112F90038BAE6 /* Model */,
+				6A596A902169868600F2B072 /* View */,
 				6A596A7B216980F100F2B072 /* AppDelegate.swift */,
-				6A596A7D216980F100F2B072 /* ViewController.swift */,
 				6A596A7F216980F100F2B072 /* Main.storyboard */,
 				6A596A85216980F200F2B072 /* Assets.xcassets */,
 				6A596A87216980F200F2B072 /* LaunchScreen.storyboard */,
@@ -70,12 +75,29 @@
 			path = "iOS-Learning";
 			sourceTree = "<group>";
 		};
-		6A596A902169868600F2B072 /* Views */ = {
+		6A596A902169868600F2B072 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				6A596A91216986DD00F2B072 /* BorderButton.swift */,
 			);
-			path = Views;
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AFB05EF217112F90038BAE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AFB05F0217112FF0038BAE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A55C201217113E200A29A58 /* WelcomeViewController.swift */,
+				6A55C2032171142F00A29A58 /* LeagueViewController.swift */,
+				6A55C2052171144100A29A58 /* SkillViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A596A7E216980F100F2B072 /* ViewController.swift in Sources */,
 				6A596A7C216980F100F2B072 /* AppDelegate.swift in Sources */,
+				6A55C202217113E200A29A58 /* WelcomeViewController.swift in Sources */,
 				6A596A84216980F100F2B072 /* iOS_Learning.xcdatamodeld in Sources */,
+				6A55C2042171142F00A29A58 /* LeagueViewController.swift in Sources */,
+				6A55C2062171144100A29A58 /* SkillViewController.swift in Sources */,
 				6A596A92216986DD00F2B072 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
